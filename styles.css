@@ -1,13 +1,26 @@
-.title
+body
 { 
-    color:red;
+/* background:url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg');
+background-size:contain; */
+ background:linear-gradient(90deg,rgb(255, 0, 38),rgb(70, 130, 180)); 
 
 }
-.subtitle
+#title
+ { 
+    color:#ba8509;
+ }
+ .subtitle
+ {
+    color: #eba026;
+ }
+
+#service-image
 { 
-    color:blue;
+    height:400px;
+    width:70%;
+    /* background:linear-gradient(215deg,red,blue); */
+    background:radial-gradient(circle,red 20%,blue 40%,green 55%)
+     
+    
 }
-#contact-us
-{ 
-    color: green;
-}
+ 
