@@ -3,15 +3,20 @@ body
 /* background:url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg');
 background-size:contain; */
  background:linear-gradient(90deg,rgb(255, 0, 38),rgb(70, 130, 180)); 
-
+/* text-transform:capitalize; */
+text-align:justify;
+font-family: 'Dancing Script', cursive,sans-serif;
+color:white;
 }
 #title
  { 
-    color:#ba8509;
+    color:wheat;
+    font-family: 'Abril Fatface', cursive;
  }
  .subtitle
  {
     color: #eba026;
+    font-family: 'Nunito Sans', sans-serif;
  }
 
 #service-image
@@ -19,8 +24,57 @@ background-size:contain; */
     height:400px;
     width:70%;
     /* background:linear-gradient(215deg,red,blue); */
-    background:radial-gradient(circle,red 20%,blue 40%,green 55%)
-     
+    background:radial-gradient(circle,red 20%,blue 40%,green 55%);
+     border:10px solid steelblue;
+    
     
 }
- 
+ .link
+ {
+   text-decoration:overline;
+ }
+.italics
+{
+   font-style:oblique;
+
+}
+#about-image
+{
+height:400px;
+width: 50%;
+border: 5px solid darkblue;
+/* padding:100px 40px 5px 0px; */
+float:left;
+margin: 80px 40px;
+}
+.site-table
+{ 
+  /* display: inline-block; */
+}
+.container
+{ 
+   background-color:rgb(250, 250, 250);
+   margin:10px;
+   height:300px;
+   display:flex;
+   flex-direction:row;
+   /* flex-wrap:wrap; */
+    justify-content:center;/* space around space in between */
+   align-items:center;/*flex-start,flex-end*/
+
+}
+.container-item
+{ 
+   background:rgb(36, 130,39);
+   color:white;
+   font-size: 25px;
+   text-align: center;
+   width: 70px;
+   line-height:50px;
+   margin:10px;
+}
+.container-item:hover
+{ 
+   background:teal;
+   color:yellow;
+}

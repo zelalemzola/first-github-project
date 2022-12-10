@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&family=Nunito+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    
   </head>
   <body>
     <h1 id="title">My Web Site</h1>
@@ -13,9 +16,9 @@
       Lorem ipsum dolor sit rrupti veritatis ipsam! Velit ea doloribus nisi .
     </p>
     <h2 class="subtitle">About me</h2>
-    <img src="/Camera Roll/LOG.jpg" height="400px" ; width="100%" alt="" />
+    <img src="/Camera Roll/LOG.jpg" id="about-image" />
     <p class="para-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio,
+      <span class="italics"> Lorem ipsum dolor sit amet consectetur</span> adipisicing elit. Sequi distinctio,
       sint libero atque accusamus, omnis, esse quia laborum ad expedita
       voluptates aspernatur. Quas debitis odit possimus mollitia alias. Eum quas
       quia ex nam nesciunt ipsum voluptatum! Maxime maiores repellat eligendi
@@ -26,7 +29,7 @@
       necessitatibus, natus perspiciatis alias minus commodi assumenda
       reiciendis suscipit, unde nemo vel animi. At similique aliquam quidem
       sapiente veritatis harum quisquam. Laudantium, quos consequatur?
-    </p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id commodi neque, optio amet cum, sunt, temporibus delectus odit labore pariatur facilis rem molestiae cupiditate eaque fugiat veniam inventore ducimus! Maxime.</p>
     <ul>
       <li class="list-item">Lorem ipsum dolor sit amet</li>
      
@@ -41,7 +44,7 @@
     </ul>
     <h2 class="subtitle">Services</h2>
     <a href="http://google.com" target="_blank" class="link">click here to go to google</a>
-    <table border="1">
+    <table border="1" class="site-table">
       <thead>
         <tr>
           <td>Lorem</td>
@@ -62,18 +65,28 @@
         </tr>
       </tbody>
     </table>
-    <img src="/Camera Roll/photo_2022-08-10_18-47-11.jpg"
-      height="200px"
-      alt=""
-    />
+    <img src="/Camera Roll/photo_2022-08-10_18-47-11.jpg" height="200px"/>
    <div id="service-image"></div>
+   <div class="container">
+   <div class="container-item"style="order:4;flex-grow:1; flex-shrink:1;flex-basis:100px;align-self:center;">A</div>
+   <div class="container-item"style="order:3;flex-grow:1; flex-shrink:3;flex-basis:100px;align-self:end;">B</div>
+   <div class="container-item"style="order:5;flex-grow:8; flex-shrink:1;flex-basis:100px;align-self:start; ">C</div>
+   <div class="container-item"style="order:1;flex-grow:1; flex-shrink:1;flex-basis:100px;align-self:start;">D</div>
+   <div class="container-item"style="order:2;flex-grow:1; flex-shrink:1;flex-basis:100px;align-self:center;">E</div>
+   <!-- <div class="container-item">F</div>
+   <div class="container-item">G</div>
+   <div class="container-item">H</div>
+   <div class="container-item">I</div>
+   <div class="container-item">J</div> -->
+  
+   </div>
     <h2 class="subtitle">Contact us</h2>
-    <form>
+    <form  style="padding-bottom: 300px;">
       <input type="text" name="" placeholder="Full Name" class="form-input"/>
       <input type="email" name="email" required placeholder="email" class="form-input" />
       <textarea name="" id="" cols="30" rows="2"></textarea>
       <button>Submit</button>
     </form>
-    
+  
   </body>
 </html>
