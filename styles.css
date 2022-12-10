@@ -14,9 +14,14 @@ input , textarea
    margin: 10px;
 }
 #title
- { 
+ {  text-align: center;
     color:wheat;
     font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    background: linear-gradient(60deg, rgb(187, 43, 43),rgb(37, 84, 70),rgb(75, 37, 84));
+    border: 10px solid wheat;
+    border-radius: 10px;
+    
  }
  .subtitle
  {
@@ -46,11 +51,16 @@ input , textarea
 #about-image
 {
 height:400px;
-width: 50%;
+width: 40%;
 border: 5px solid darkblue;
 /* padding:100px 40px 5px 0px; */
 float:left;
 margin: 80px 40px;
+}
+.para-text
+{ 
+   margin:90px;
+
 }
 .site-table
 { 
