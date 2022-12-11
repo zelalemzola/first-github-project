@@ -41,12 +41,52 @@ input , textarea
 }
  .link
  {
-   text-decoration:overline;
+
+ 
+   text-decoration: none;
+   color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient( 90deg,#3c4f4c, #f53199);
+    padding:8px 8px;
+    border-radius:4em;
+   -webkit-transition: background-color 500ms ease-in-out,color 600ms ease-in, padding 500ms ease-in-out ;
+   -moz-transition: background-color 500ms ease-in-out,color 600ms ease-in, padding 500ms ease-in-out ;
+   -o-transition: background-color 500ms ease-in-out,color 600ms ease-in, padding 500ms ease-in-out ;
+  
+ }
+ .link:hover
+ { 
+   color:#706f26;
+   background-color: linear-gradient(#f53199,#3c4f4c);
+   padding:4px 4px ;
+
+   
+
+ }
+ #about-me
+ { 
+   /* animation-name: red-to-black;
+   animation-duration: 4s;
+   animation-timing-function:ease-in;
+   animation-delay:2s;
+   animation-direction:alternate-reverse;
+   animation-iteration-count: infinite; */
+   margin-right: 622px;
+   border-radius: 10em;
+   -webkit-animation: red-to-black 4s ease-in 2s alternate-reverse infinite;
+   -o-animation: red-to-black 4s ease-in 2s alternate-reverse infinite;
+   -ms-animation: red-to-black 4s ease-in 2s alternate-reverse infinite;
+   -moz-animation: red-to-black 4s ease-in 2s alternate-reverse infinite;
+   
  }
 .italics
 {
    font-style:oblique;
 
+}
+.me 
+{ 
+   margin-bottom: 40px;
 }
 #about-image
 {
@@ -128,15 +168,27 @@ margin: 80px 40px;
    color:white;
 
    background:linear-gradient(90deg, rgb(187, 43, 43),rgb(93, 201, 31));
-   transform: translate(50px,30px);
+   /* transform: translate(50px,30px); */
    -webkit-transition: background-color 500ms ease-in-out, padding 400ms ease-in-out;
    -o-transition: background-color 500ms ease-in-out, padding 400ms ease-in-out ;
    transition: background-color 500ms ease-in-out, padding 400ms ease-in-out;
    -moz-transition: background-color 500ms ease-in-out, padding 400ms ease-in-out;
    border-radius: 12px;
+   /* transform: matrix(1,0.45,0.45,1,100,50); */
 }
 .submit-button:hover{ 
    background-color: rgb(77, 96, 112);
    padding:10px 10px;
-   
+   /* transform: scale(0.7); */
+   /* transform: rotate(70deg); */
+   /* transform: skewx(90deg); */
+}
+@keyframes red-to-black {
+   /* from {background:red}
+   to{background: black;} */
+
+   0% {background:red;transform: translate(0px,0px);}
+   50%{background: yellow; transform:translate(10px,10px)}
+   100%{background: black;transform: translate(20px,20px);}
+
 }
